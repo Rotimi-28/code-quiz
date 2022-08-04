@@ -1,128 +1,143 @@
-* {
+* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #777;
-  }
+    background-color: bisque;
 
-  .centerblock{
-    margin: 40px auto 0 auto;
-    width: 40%;    
+}
+html, body{
+    height: 100%;
+    scroll-behavior: smooth;
+}
+body{
     display: flex;
     flex-direction: column;
 }
-
-  .header{
-      display: flex;
-      justify-content: space-between;
-      margin: 20px;
-      font-size: 15px;
-  }
-
-.header a{
-    text-decoration: none;
-}
-
-.timer{
-    font-weight: lighter;
-    font-size: 13px;
-}
-
-.content{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    text-align: center;
-    margin: 15px auto 20px auto;
-}
-
-.score-content{
-    text-align: left;
-    margin: 30px auto 20px auto;
-}
-
-.score-content h3{
-    font-size: 20px;
-}
-
-.score-content h3, h4, form{
-    padding-bottom: 15px;
-}
-
-.row-header{
-    text-align: left;   
-    margin: 0 auto 20px auto;
-    font-size: 18px;
-}
-
-.options{
-    width: 80%;
-    margin: 0 auto 20px auto;
-    padding-bottom: 20px;
-    text-align: left;    
-}
-
-.options li{
-    padding-top: 5px;  
-}
-
-li{
-    list-style: none;
-}
-
-.result{
-    font-style: italic;
-    color: rgba(0,0,0,0.5);
-    border-top: solid 1px;
-    padding-top: 5px;
-}
-
-.intro{
-    margin: 10px;
-}
-
-.intro p{
-    line-height: 1.5;
-}
-
-
-.btn{
-    background-color: #3F0855;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 9px;
-}
-
-.linkButton{
-    background: none;
-    border: none;
-    font-family: arial, sans-serif;
-    color: blue;   
-    cursor: pointer;
-}
-
-.submitForm{
-    display: flex;
+header {
+    display:  flex;
+    padding: 35px 20px;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
+header a{
+    color: purple;
+    text-decoration: none;
+}
+main{
+    margin-top: 50px;
+    flex: 1 0 auto;
+    min-height: auto;
+    width: 50%;
+    align-self: center;
+    text-align: center;
+    
+}
+button{
+    background-color: purple;
+    height: auto;
+    border-radius: 7px;
+    color: white;
+    font-size: 15px;
+    padding: 5px 8px;
 
-.highscore{
-    padding-bottom: 10px;
+}
+button a{
+    text-decoration: none;
+    color: white;
+
+}
+.start{
+    flex-direction: column;
+}
+.start h1 {
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+.start p{
+    font-size: 20px;
+}
+.start button {
+    margin-top: 30px;
+    font-size: 20px;
+    padding: 10px 15px;
+}
+.quiz{
+    flex-direction: column;
+}
+.quiz button{
+    margin: 5px;
+    width:max-content ;
+}
+.quiz h2{
+    margin-bottom: 25px;
+}
+.result h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 50px;
+    border-top: 2px solid gray;
+    padding-top: 25px;
+    width: 100%;
     text-align: left;
 }
+.score{
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: left;
+}
 
+.score h2{
+    font-size: 45px;
+    text-align: left;
+}
+.score h3{
+    margin-top: 25px;
+    font-size: 25px;
+    text-align: left;
+}
+.score form{
+    display: inline;
+    align-self: start;
+}
+.score input{
+    height: 25px;
+    font-size: 20px;
+}
+.score button{
+    height: fit-content;
+    font-size: 20px;
+
+}
+.highscore{
+    display: flex;
+    flex-direction: column;
+}
+.highscore h1 {
+    font-size: 40px;
+}
+.highscore ul{
+    margin-top: 40px;
+}
+.highscore button{
+    width: fit-content;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+.highscoreButtons{
+    display: flex;
+    /* justify-content: space-around; */
+    flex-direction: row;
+    font-size: 20px;
+}
 .highscore li{
-    background-color: white;
-    font-size: 15px;
-    padding: 5px;
-    width: 60%;
-}
+    list-style: none;
+    font-size: 30px;
+    background-color: lightgray;
+    margin-top: 5px;
+    text-align: left;
 
-.highscore li:nth-child(odd){
-    background-color:#CCCCFF;
 }
-
-.highscore .btn{
-    margin: 5px;
+footer{
+    align-content: flex-end;
+    flex-shrink: 0;
+    padding: 20px;
 }
